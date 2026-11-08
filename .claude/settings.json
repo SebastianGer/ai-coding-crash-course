@@ -1,0 +1,18 @@
+{
+  "env": {
+    "SSH_AUTH_SOCK": ""
+  },
+  "permissions": {
+    "deny": [
+      "Bash(git push *git@*)",
+      "Bash(git push *ssh://*)",
+      "Bash(git remote add *git@*)",
+      "Bash(git remote add *ssh://*)",
+      "Bash(git remote set-url *git@*)",
+      "Bash(git remote set-url *ssh://*)",
+      "Bash(git config *git@*)",
+      "Bash(git config *ssh://*)",
+      "Bash(*SSH_AUTH_SOCK=*)"
+    ]
+  }
+}
